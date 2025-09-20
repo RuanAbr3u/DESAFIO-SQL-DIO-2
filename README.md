@@ -1,85 +1,76 @@
-# 🚗 Desafio DIO -- Banco de Dados Oficina
+# DESAFIO SQL DIO 2 — Oficina Mecânica
 
-Este projeto faz parte de um **desafio da Digital Innovation One (DIO)**
-e tem como objetivo modelar, criar, popular e consultar um banco de
-dados para gerenciamento de uma **oficina mecânica**.
+[![MySQL](https://img.shields.io/badge/MySQL-8+-blue?logo=mysql&logoColor=white)](https://www.mysql.com/)  
+[![SQL](https://img.shields.io/badge/SQL-DDL%20%7C%20DML%20%7C%20DQL-orange?logo=database&logoColor=white)](#)  
+[![DIO](https://img.shields.io/badge/DIO-Bootcamp-lightgrey?logo=databricks&logoColor=white)](https://www.dio.me/)  
 
-O sistema contempla clientes (pessoa física e jurídica), veículos,
-funcionários, serviços, peças, ordens de serviço e pagamentos.
+---
 
-------------------------------------------------------------------------
+## 📌 Descrição
 
-![Texto alternativo](imagens/Diagrama.png)
+Projeto desenvolvido como parte de um desafio da **DIO**.  
+O objetivo é **modelar, criar, popular e consultar** um banco de dados para uma **oficina mecânica**, permitindo:  
 
-------------------------------------------------------------------------
+- Cadastro de clientes (Pessoa Física e Jurídica)  
+- Cadastro de veículos  
+- Controle de funcionários  
+- Registro de serviços e peças  
+- Emissão de ordens de serviço  
+- Controle de pagamentos  
 
-## 📂 Estrutura do Projeto
+---
 
-O repositório contém três arquivos principais:
+## 📁 Estrutura do Projeto
 
--   **`BD oficina.sql`** → Script responsável pela **criação do banco de
-    dados e tabelas**.\
--   **`Alimentado BD.sql`** → Script para **popular o banco** com dados
-    fictícios (clientes, veículos, serviços, funcionários, ordens de
-    serviço, etc.).\
--   **`Consultas BD.sql`** → Conjunto de **consultas SQL** para análise
-    e manipulação das informações do banco.
+| Arquivo               | Descrição |
+|-----------------------|-----------|
+| `BD oficina.sql`      | Criação do banco de dados e das tabelas |
+| `Alimentado BD.sql`   | Inserção de dados fictícios (população das tabelas) |
+| `Consultas BD.sql`    | Exemplos de consultas para análise |
 
-------------------------------------------------------------------------
+---
 
-## 🛠️ Estrutura do Banco
+## 🔧 Tecnologias Utilizadas
 
-O banco de dados é criado com o nome `oficina_abr3u` e contém as
-seguintes tabelas:
+- **MySQL 8.0+**  
+- **SQL (DDL, DML, DQL)**  
+- Testado em **Windows 11** com **MySQL Workbench**, mas pode ser executado em qualquer sistema que suporte MySQL.  
 
--   **cliente** → Cadastro de clientes (pessoa física/jurídica).\
--   **veiculo** → Informações dos veículos vinculados aos clientes.\
--   **funcionario** → Funcionários da oficina, cargos e salários.\
--   **servico** → Serviços oferecidos pela oficina.\
--   **peca** → Peças disponíveis em estoque.\
--   **ordem_servico** → Registro das ordens de serviço (com status e
-    prazos).\
--   **os_servico** → Associação de serviços prestados dentro de cada
-    OS.\
--   **os_peca** → Peças utilizadas em cada OS.\
--   **pagamento** → Controle de pagamentos (valor, forma e status).
+---
 
-------------------------------------------------------------------------
+## 🚀 Como Executar
 
-## 📊 Exemplos de Consultas
+1. Clone este repositório:  
+   ```bash
+   git clone https://github.com/RuanAbr3u/DESAFIO-SQL-DIO-2.git
+   ```
 
-O arquivo `Consultas BD.sql` contém diversos exemplos práticos, como:
+2. Acesse seu gerenciador MySQL (Workbench, DBeaver ou terminal).  
 
--   Listar descrição e valor de todos os serviços.\
--   Filtrar funcionários com salário acima de R\$ 3.000.\
--   Exibir clientes que são **Pessoa Jurídica**.\
--   Calcular preço das peças com desconto de 10%.\
--   Calcular a duração (em dias) de ordens de serviço fechadas.\
--   Listar veículos do mais novo para o mais antigo.\
--   Identificar clientes com mais de um veículo.\
--   Descobrir quais funcionários participaram de mais de uma OS.\
--   Obter o valor total de cada OS, incluindo serviços e peças.
+3. Execute os scripts na seguinte ordem:
+   - `BD oficina.sql` → Criação das tabelas  
+   - `Alimentado BD.sql` → Inserção dos dados  
+   - `Consultas BD.sql` → Testes e consultas  
 
-------------------------------------------------------------------------
+---
 
-## ▶️ Como Executar
+## 📊 Modelo Conceitual (ER)
 
-1.  Clone este repositório ou copie os arquivos `.sql`.\
-2.  Execute o script `BD oficina.sql` para criar o banco e suas
-    tabelas.\
-3.  Execute o script `Alimentado BD.sql` para inserir os dados
-    iniciais.\
-4.  Rode as consultas em `Consultas BD.sql` para explorar os resultados.
+> *(Sugestão: adicione aqui um diagrama ER em imagem, exportado do Workbench ou desenhado no draw.io. Exemplo:)*  
 
-------------------------------------------------------------------------
+![Diagrama ER](imagens/Diagrama.png)
 
-## 🚀 Tecnologias Utilizadas
+---
 
--   **MySQL** (versão 8+ recomendada).\
--   Scripts SQL puros para **DDL, DML e DQL**.
+## 🧑‍💻 Autor
 
-------------------------------------------------------------------------
+Projeto desenvolvido por **Ruan de Abreu Santos de Paula**  
+📌 [Meu GitHub](https://github.com/RuanAbr3u)  
 
-## 📌 Autor
+---
 
-Desenvolvido como parte de um desafio da **Ruan de Abreu Santos de Paula**.
+## 🔖 Licença
+
+Este projeto é de uso livre para fins de estudo e prática.  
+
+---
