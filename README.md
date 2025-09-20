@@ -56,7 +56,6 @@ O objetivo é **modelar, criar, popular e consultar** um banco de dados para uma
 
 ## 📊 Modelo Conceitual (ER)
 
-> *(Sugestão: adicione aqui um diagrama ER em imagem, exportado do Workbench ou desenhado no draw.io. Exemplo:)*  
 
 ![Diagrama ER](imagens/Diagrama.png)
 
